@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		740CB11A2BF0A657001A6C4F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 740CB1192BF0A657001A6C4F /* libc++.tbd */; };
+		740CB11D2BF22B61001A6C4F /* nn.bin in Resources */ = {isa = PBXBuildFile; fileRef = 740CB11C2BF22B61001A6C4F /* nn.bin */; };
+		746C152C2BF09FEB009DC49A /* YaneuraOuWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 746C152B2BF09FEB009DC49A /* YaneuraOuWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		746C15312BF09FEB009DC49A /* YaneuraOuWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C15302BF09FEB009DC49A /* YaneuraOuWatchApp.swift */; };
+		746C15332BF09FEB009DC49A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C15322BF09FEB009DC49A /* ContentView.swift */; };
+		746C15352BF09FEC009DC49A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746C15342BF09FEC009DC49A /* Assets.xcassets */; };
+		746C15382BF09FEC009DC49A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746C15372BF09FEC009DC49A /* Preview Assets.xcassets */; };
+		746C15432BF0A024009DC49A /* EngineCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C15422BF0A024009DC49A /* EngineCommunicator.swift */; };
+		746C15462BF0A116009DC49A /* YaneuraOuiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 746C15452BF0A116009DC49A /* YaneuraOuiOSSPM */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		746C152D2BF09FEB009DC49A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 746C151F2BF09FEB009DC49A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 746C152A2BF09FEB009DC49A;
+			remoteInfo = "YaneuraOuWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		746C153E2BF09FEC009DC49A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				746C152C2BF09FEB009DC49A /* YaneuraOuWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		740CB1192BF0A657001A6C4F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.4.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		740CB11B2BF0B26E001A6C4F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		740CB11C2BF22B61001A6C4F /* nn.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = nn.bin; sourceTree = "<group>"; };
+		746C15252BF09FEB009DC49A /* YaneuraOuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaneuraOuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		746C152B2BF09FEB009DC49A /* YaneuraOuWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YaneuraOuWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		746C15302BF09FEB009DC49A /* YaneuraOuWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaneuraOuWatchApp.swift; sourceTree = "<group>"; };
+		746C15322BF09FEB009DC49A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		746C15342BF09FEC009DC49A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		746C15372BF09FEC009DC49A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		746C15422BF0A024009DC49A /* EngineCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineCommunicator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		746C15282BF09FEB009DC49A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740CB11A2BF0A657001A6C4F /* libc++.tbd in Frameworks */,
+				746C15462BF0A116009DC49A /* YaneuraOuiOSSPM in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		740CB1182BF0A657001A6C4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				740CB1192BF0A657001A6C4F /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		746C151E2BF09FEB009DC49A = {
+			isa = PBXGroup;
+			children = (
+				740CB11B2BF0B26E001A6C4F /* README.md */,
+				746C152F2BF09FEB009DC49A /* YaneuraOuWatch Watch App */,
+				746C15262BF09FEB009DC49A /* Products */,
+				740CB1182BF0A657001A6C4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		746C15262BF09FEB009DC49A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				746C15252BF09FEB009DC49A /* YaneuraOuWatch.app */,
+				746C152B2BF09FEB009DC49A /* YaneuraOuWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		746C152F2BF09FEB009DC49A /* YaneuraOuWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				746C15302BF09FEB009DC49A /* YaneuraOuWatchApp.swift */,
+				746C15322BF09FEB009DC49A /* ContentView.swift */,
+				746C15342BF09FEC009DC49A /* Assets.xcassets */,
+				746C15362BF09FEC009DC49A /* Preview Content */,
+				746C15422BF0A024009DC49A /* EngineCommunicator.swift */,
+				740CB11C2BF22B61001A6C4F /* nn.bin */,
+			);
+			path = "YaneuraOuWatch Watch App";
+			sourceTree = "<group>";
+		};
+		746C15362BF09FEC009DC49A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				746C15372BF09FEC009DC49A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		746C15242BF09FEB009DC49A /* YaneuraOuWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746C153F2BF09FEC009DC49A /* Build configuration list for PBXNativeTarget "YaneuraOuWatch" */;
+			buildPhases = (
+				746C15232BF09FEB009DC49A /* Resources */,
+				746C153E2BF09FEC009DC49A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				746C152E2BF09FEB009DC49A /* PBXTargetDependency */,
+			);
+			name = YaneuraOuWatch;
+			productName = YaneuraOuWatch;
+			productReference = 746C15252BF09FEB009DC49A /* YaneuraOuWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		746C152A2BF09FEB009DC49A /* YaneuraOuWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746C153B2BF09FEC009DC49A /* Build configuration list for PBXNativeTarget "YaneuraOuWatch Watch App" */;
+			buildPhases = (
+				746C15272BF09FEB009DC49A /* Sources */,
+				746C15282BF09FEB009DC49A /* Frameworks */,
+				746C15292BF09FEB009DC49A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YaneuraOuWatch Watch App";
+			packageProductDependencies = (
+				746C15452BF0A116009DC49A /* YaneuraOuiOSSPM */,
+			);
+			productName = "YaneuraOuWatch Watch App";
+			productReference = 746C152B2BF09FEB009DC49A /* YaneuraOuWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		746C151F2BF09FEB009DC49A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					746C15242BF09FEB009DC49A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					746C152A2BF09FEB009DC49A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 746C15222BF09FEB009DC49A /* Build configuration list for PBXProject "YaneuraOuWatch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 746C151E2BF09FEB009DC49A;
+			packageReferences = (
+				746C15442BF0A116009DC49A /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */,
+			);
+			productRefGroup = 746C15262BF09FEB009DC49A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				746C15242BF09FEB009DC49A /* YaneuraOuWatch */,
+				746C152A2BF09FEB009DC49A /* YaneuraOuWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		746C15232BF09FEB009DC49A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746C15292BF09FEB009DC49A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740CB11D2BF22B61001A6C4F /* nn.bin in Resources */,
+				746C15382BF09FEC009DC49A /* Preview Assets.xcassets in Resources */,
+				746C15352BF09FEC009DC49A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		746C15272BF09FEB009DC49A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746C15332BF09FEB009DC49A /* ContentView.swift in Sources */,
+				746C15432BF0A024009DC49A /* EngineCommunicator.swift in Sources */,
+				746C15312BF09FEB009DC49A /* YaneuraOuWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		746C152E2BF09FEB009DC49A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 746C152A2BF09FEB009DC49A /* YaneuraOuWatch Watch App */;
+			targetProxy = 746C152D2BF09FEB009DC49A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		746C15392BF09FEC009DC49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		746C153A2BF09FEC009DC49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		746C153C2BF09FEC009DC49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YaneuraOuWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 26639CRUMF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = YaneuraOuWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.outlook.select766.YaneuraOuWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		746C153D2BF09FEC009DC49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YaneuraOuWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 26639CRUMF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = YaneuraOuWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.outlook.select766.YaneuraOuWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		746C15402BF09FEC009DC49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26639CRUMF;
+				INFOPLIST_KEY_CFBundleDisplayName = YaneuraOuWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.outlook.select766.YaneuraOuWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		746C15412BF09FEC009DC49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26639CRUMF;
+				INFOPLIST_KEY_CFBundleDisplayName = YaneuraOuWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.outlook.select766.YaneuraOuWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		746C15222BF09FEB009DC49A /* Build configuration list for PBXProject "YaneuraOuWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746C15392BF09FEC009DC49A /* Debug */,
+				746C153A2BF09FEC009DC49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746C153B2BF09FEC009DC49A /* Build configuration list for PBXNativeTarget "YaneuraOuWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746C153C2BF09FEC009DC49A /* Debug */,
+				746C153D2BF09FEC009DC49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746C153F2BF09FEC009DC49A /* Build configuration list for PBXNativeTarget "YaneuraOuWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746C15402BF09FEC009DC49A /* Debug */,
+				746C15412BF09FEC009DC49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		746C15442BF0A116009DC49A /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:select766/YaneuraOuiOSSPM.git";
+			requirement = {
+				branch = watchos;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		746C15452BF0A116009DC49A /* YaneuraOuiOSSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 746C15442BF0A116009DC49A /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */;
+			productName = YaneuraOuiOSSPM;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 746C151F2BF09FEB009DC49A /* Project object */;
+}

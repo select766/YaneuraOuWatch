@@ -1,6 +1,3 @@
 # やねうら王 on Apple Watch
 
-最低限必要な設定
-
-- `USI_Hash`: 64
-  - デフォルトの1024MBはメモリ不足で起動できない。
+`nn.bin`は水匠5評価関数。 https://github.com/HiraokaTakuya/get_suisho5_nn/raw/master/suisho5_nn/nn.bin から取得した。

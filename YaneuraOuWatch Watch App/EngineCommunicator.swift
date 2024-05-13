@@ -75,7 +75,13 @@ func startYaneuraou(recvCallback: @escaping (String) -> Void) {
     // recvCallback: やねうら王からメッセージを受信したときに呼ばれる（改行を含まない1行） 例: "bestmove 7g7f"
     yaneRecvCallback = recvCallback
 
-    YaneuraOuiOSSPM.yaneuraou_ios_main(usiRead, usiWrite)
+    // assetのnn.binを評価関数ファイルとして渡す
+    guard let nnue_eval_path = Bundle.main.path(forResource: "nn", ofType: "bin") else {
+        fatalError()
+    }
+    let nnue_eval_path_p = stringToUnsafeMutableBufferPointer(nnue_eval_path)
+
+    YaneuraOuiOSSPM.yaneuraou_ios_main(usiRead, usiWrite, nnue_eval_path_p.baseAddress!)
 }
 
 func sendToYaneuraou(messageWithoutNewLine: String) -> Void {

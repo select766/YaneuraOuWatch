@@ -1,0 +1,15 @@
+{
+  "originHash" : "71a737eeab6426340dbd0f5d4d755e312b4ac55ca21e62589b601b91b363f45c",
+  "pins" : [
+    {
+      "identity" : "yaneuraouiosspm",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:select766/YaneuraOuiOSSPM.git",
+      "state" : {
+        "branch" : "watchos",
+        "revision" : "c620fbcd98386c1fd61b89949991be7f757b1e34"
+      }
+    }
+  ],
+  "version" : 3
+}
