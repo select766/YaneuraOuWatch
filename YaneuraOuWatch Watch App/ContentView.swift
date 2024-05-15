@@ -12,7 +12,7 @@ let baseURL = "http://192.168.3.12:4090"
 
 struct ContentView: View {
     @State var running = false
-    @State var lastMessage = "やねうら王 on Apple Watch"
+    @State var lastMessage = "ふかうら王 on Apple Watch"
     @State var writeQueue = [String]()
     @State var writeBusy = false
 

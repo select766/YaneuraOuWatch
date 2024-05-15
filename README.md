@@ -1,3 +1,6 @@
-# やねうら王 on Apple Watch
+# ふかうら王 on Apple Watch
 
-`nn.bin`は水匠5評価関数。 https://github.com/HiraokaTakuya/get_suisho5_nn/raw/master/suisho5_nn/nn.bin から取得した。
+このブランチはDL系のふかうら王を動作させる。
+
+`DlShogiResnet.mlmodel`: 10ブロック192チャンネルのDNN。学習済みモデルファイルの場所 https://github.com/select766/FukauraOu-CoreML/releases/tag/coreml-sample-20220613
+

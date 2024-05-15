@@ -74,14 +74,11 @@ func startYaneuraou(recvCallback: @escaping (String) -> Void) {
     // やねうら王とのプロセス内通信準備
     // recvCallback: やねうら王からメッセージを受信したときに呼ばれる（改行を含まない1行） 例: "bestmove 7g7f"
     yaneRecvCallback = recvCallback
+    // 評価関数としてCoreMLモデルを渡す
+    let compute_units: Int32 = 2 // 0:cpu, 1: cpuandgpu, 2: all (neural engine)
+    let model_url_p = stringToUnsafeMutableBufferPointer(DlShogiResnet.urlOfModelInThisBundle.absoluteString)
 
-    // assetのnn.binを評価関数ファイルとして渡す
-    guard let nnue_eval_path = Bundle.main.path(forResource: "nn", ofType: "bin") else {
-        fatalError()
-    }
-    let nnue_eval_path_p = stringToUnsafeMutableBufferPointer(nnue_eval_path)
-
-    YaneuraOuiOSSPM.yaneuraou_ios_main(usiRead, usiWrite, nnue_eval_path_p.baseAddress!)
+    YaneuraOuiOSSPM.yaneuraou_ios_main(usiRead, usiWrite, model_url_p.baseAddress!, compute_units)
 }
 
 func sendToYaneuraou(messageWithoutNewLine: String) -> Void {

@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		740CB11A2BF0A657001A6C4F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 740CB1192BF0A657001A6C4F /* libc++.tbd */; };
-		740CB11D2BF22B61001A6C4F /* nn.bin in Resources */ = {isa = PBXBuildFile; fileRef = 740CB11C2BF22B61001A6C4F /* nn.bin */; };
 		740CB11F2BF3483B001A6C4F /* BatteryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CB11E2BF3483B001A6C4F /* BatteryViewModel.swift */; };
 		740CB1232BF34B2B001A6C4F /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CB1222BF34B2B001A6C4F /* BatteryView.swift */; };
+		740CB1252BF4BF67001A6C4F /* DlShogiResnet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 740CB1242BF4BF67001A6C4F /* DlShogiResnet.mlmodel */; };
 		746C152C2BF09FEB009DC49A /* YaneuraOuWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 746C152B2BF09FEB009DC49A /* YaneuraOuWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		746C15312BF09FEB009DC49A /* YaneuraOuWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C15302BF09FEB009DC49A /* YaneuraOuWatchApp.swift */; };
 		746C15332BF09FEB009DC49A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C15322BF09FEB009DC49A /* ContentView.swift */; };
@@ -47,9 +47,9 @@
 /* Begin PBXFileReference section */
 		740CB1192BF0A657001A6C4F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.4.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		740CB11B2BF0B26E001A6C4F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		740CB11C2BF22B61001A6C4F /* nn.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = nn.bin; sourceTree = "<group>"; };
 		740CB11E2BF3483B001A6C4F /* BatteryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryViewModel.swift; sourceTree = "<group>"; };
 		740CB1222BF34B2B001A6C4F /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		740CB1242BF4BF67001A6C4F /* DlShogiResnet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = DlShogiResnet.mlmodel; path = "YaneuraOuWatch Watch App/DlShogiResnet.mlmodel"; sourceTree = SOURCE_ROOT; };
 		746C15252BF09FEB009DC49A /* YaneuraOuWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaneuraOuWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		746C152B2BF09FEB009DC49A /* YaneuraOuWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YaneuraOuWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		746C15302BF09FEB009DC49A /* YaneuraOuWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaneuraOuWatchApp.swift; sourceTree = "<group>"; };
@@ -105,10 +105,10 @@
 				746C15302BF09FEB009DC49A /* YaneuraOuWatchApp.swift */,
 				746C15322BF09FEB009DC49A /* ContentView.swift */,
 				740CB11E2BF3483B001A6C4F /* BatteryViewModel.swift */,
+				740CB1242BF4BF67001A6C4F /* DlShogiResnet.mlmodel */,
 				746C15342BF09FEC009DC49A /* Assets.xcassets */,
 				746C15362BF09FEC009DC49A /* Preview Content */,
 				746C15422BF0A024009DC49A /* EngineCommunicator.swift */,
-				740CB11C2BF22B61001A6C4F /* nn.bin */,
 				740CB1222BF34B2B001A6C4F /* BatteryView.swift */,
 			);
 			path = "YaneuraOuWatch Watch App";
@@ -214,7 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				740CB11D2BF22B61001A6C4F /* nn.bin in Resources */,
 				746C15382BF09FEC009DC49A /* Preview Assets.xcassets in Resources */,
 				746C15352BF09FEC009DC49A /* Assets.xcassets in Resources */,
 			);
@@ -231,6 +230,7 @@
 				740CB1232BF34B2B001A6C4F /* BatteryView.swift in Sources */,
 				746C15332BF09FEB009DC49A /* ContentView.swift in Sources */,
 				746C15432BF0A024009DC49A /* EngineCommunicator.swift in Sources */,
+				740CB1252BF4BF67001A6C4F /* DlShogiResnet.mlmodel in Sources */,
 				746C15312BF09FEB009DC49A /* YaneuraOuWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,7 +491,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:select766/YaneuraOuiOSSPM.git";
 			requirement = {
-				branch = watchos;
+				branch = "watchos-fukauraou";
 				kind = branch;
 			};
 		};

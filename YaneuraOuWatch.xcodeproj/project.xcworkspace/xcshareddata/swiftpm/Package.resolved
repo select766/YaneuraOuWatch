@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:select766/YaneuraOuiOSSPM.git",
       "state" : {
-        "branch" : "watchos",
-        "revision" : "a3c783b274cb0ab4fb4bc65889d4dadea72a703a"
+        "branch" : "watchos-fukauraou",
+        "revision" : "a27a2c19d536c54ee6a04e5038af496e50e0d402"
       }
     }
   ],
