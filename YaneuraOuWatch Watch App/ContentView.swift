@@ -17,14 +17,18 @@ struct ContentView: View {
     @State var writeBusy = false
 
     var body: some View {
-        Text(lastMessage).padding()
-        if !running {
-            Button(action: start) {
-                Text("Connect")
+        VStack(alignment: .leading) {
+            BatteryView()
+            Text(lastMessage).frame(maxWidth: .infinity, alignment: .leading)
+            if !running {
+                Button(action: start) {
+                    Text("Connect")
+                }.padding()
             }
-        }
+            Spacer()
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
-    
+
     func start() {
         if running {
             return
