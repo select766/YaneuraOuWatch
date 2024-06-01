@@ -491,7 +491,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:select766/YaneuraOuiOSSPM.git";
 			requirement = {
-				branch = watchos;
+				branch = "watchos.halfkp_128x2-32-32";
 				kind = branch;
 			};
 		};
