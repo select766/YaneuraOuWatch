@@ -65,3 +65,10 @@ EOT
 12,bestmove
 EOT
 ```
+
+# ライセンス
+
+CC0
+
+ただし、ビルドの際に依存ライブラリがダウンロードされます。思考エンジンとしてやねうら王をビルドしたもの(https://github.com/select766/YaneuraOuiOSSPM/tree/watchos)がダウンロードされ、これはGPLv3ライセンスですのでご注意ください。
+
