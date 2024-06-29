@@ -1,5 +1,7 @@
 # やねうら王 on Apple Watch
 
+2024年6月29日開催、[NPO法人AI電竜戦プロジェクト主催 第5回電竜戦TSEC指定局面戦](https://denryu-sen.jp/denryusen/dr5_tsec/dr1_live.php) に将棋AI「うぉっち・ざ・るーく！」として参加したソフトです。第1部で11勝13敗で23位（28チーム中）。記事: https://select766.hatenablog.com/entry/2024/06/29/192614
+
 # モデルについて
 nnue-pytorchにより独自学習した。
 shogi_hao_depth9データセットを利用。1008ファイルを学習に、8ファイルをvalidationに使用。
